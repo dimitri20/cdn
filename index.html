@@ -9,17 +9,32 @@
 </head>
 
 <body>
+
+	<div id="particles-js"></div>
+
 	<header id="header-main">
 		
 	</header>
 
-	<div id="particles-js"></div>
-
+	
 	<div class="alert alert-danger alert-main" role="alert">
 		ქალბატონებო და ბატონებო,
 		თიბისი ბანკის შეფერხებით მუშაობს.
 		რის გამოც გვიგვიანებს თქვენი თანხების ჩარიცხვებს
 	</div>
+
+
+
+
+	<section id="main-body">
+		<div>
+			<p class="display-inline-block">
+				კრიპტო ვალუტის ყიდვის და გაყიდვის უმარტივესი გზა.
+					<br>
+				იყიდეთ და გაყიდეთ Bitcoin, Ethereum, Litecoin, Bitcoin cash,Tether.
+			</p>
+		</div>
+	</section>
 
 	
 
@@ -122,6 +137,8 @@
 		particlesJS.load('particles-js', 'particlesjs-config.json', function() {
 		  console.log('callback - particles.js config loaded');
 		});	
+
+		document.getElementById('particles-js').innerHeight = window.innerHeight - 45 - document.getElementById('footer-main').innerHeight + 'px';
 	</script>
 
 </body>
