@@ -15,9 +15,21 @@ header{
     text-align: center;
 }
 
-footer {
-	
+
+#footer-main{
+  background-color: #222;
 }
+
+#footer-main a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#footer-main a:hover {
+  opacity: 0.5;
+}
+
 
 #particles-js {
   position: absolute;
