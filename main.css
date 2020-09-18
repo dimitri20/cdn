@@ -52,3 +52,59 @@ header{
 #main-body p {
   font-size: 28px;
 }
+
+#main-body-buttons > div{
+  display: inline-block;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.btn{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333!important;
+  border-radius: 0 !important;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+.btn:hover{
+  color: #fff;
+}
+
+.btn:hover:after{
+  width: 100%;
+}
+
